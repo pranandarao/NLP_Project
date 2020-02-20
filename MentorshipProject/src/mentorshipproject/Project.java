@@ -109,17 +109,17 @@ public class Project extends javax.swing.JFrame {
 
 
         try {
-            PrintWriter writer = new PrintWriter("C:\\Users\\prana\\Desktop\\TestDocs\\InputDoc.txt", "UTF-8");
+            PrintWriter writer = new PrintWriter("C:\\Users\\prana\\Desktop\\NLP_Project\\TestDocs\\InputDoc.txt", "UTF-8");
             writer.println(input);
             writer.close();
 
-            File f1 = new File("C:\\Users\\prana\\Desktop\\TestDocs\\CosineSimilarity.txt");
-            File f2 = new File("C:\\Users\\prana\\Desktop\\TestDocs\\USA.txt");
-            File f3 = new File("C:\\Users\\prana\\Desktop\\TestDocs\\Russia.txt");
-            File f4 = new File("C:\\Users\\prana\\Desktop\\TestDocs\\UnitedKingdom.txt");
-            File f5 = new File("C:\\Users\\prana\\Desktop\\TestDocs\\France.txt");
-            File f6 = new File("C:\\Users\\prana\\Desktop\\TestDocs\\Canada.txt");
-            File f7 = new File("C:\\Users\\prana\\Desktop\\TestDocs\\InputDoc.txt");
+            File f1 = new File("C:\\Users\\prana\\Desktop\\NLP_Project\\TestDocs\\CosineSimilarity.txt");
+            File f2 = new File("C:\\Users\\prana\\Desktop\\NLP_Project\\TestDocs\\USA.txt");
+            File f3 = new File("C:\\Users\\prana\\Desktop\\NLP_Project\\TestDocs\\Russia.txt");
+            File f4 = new File("C:\\Users\\prana\\Desktop\\NLP_Project\\TestDocs\\UnitedKingdom.txt");
+            File f5 = new File("C:\\Users\\prana\\Desktop\\NLP_Project\\TestDocs\\France.txt");
+            File f6 = new File("C:\\Users\\prana\\Desktop\\NLP_Project\\TestDocs\\Canada.txt");
+            File f7 = new File("C:\\Users\\prana\\Desktop\\NLP_Project\\TestDocs\\InputDoc.txt");
 
             PTBTokenizer<CoreLabel> ptbt1 = new PTBTokenizer<>(new FileReader(f1), new CoreLabelTokenFactory(), "");
             PTBTokenizer<CoreLabel> ptbt2 = new PTBTokenizer<>(new FileReader(f2), new CoreLabelTokenFactory(), "");
